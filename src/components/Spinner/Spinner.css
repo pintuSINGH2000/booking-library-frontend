@@ -1,0 +1,92 @@
+.spinner {
+  display: inline-block;
+  position: relative;
+}
+
+.spinner-circle {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: transparent;
+  animation: spinner-rotate 0.8s linear infinite;
+}
+
+.spinner-small .spinner-circle {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+.spinner-medium .spinner-circle {
+  width: 40px;
+  height: 40px;
+  border-width: 4px;
+}
+
+.spinner-large .spinner-circle {
+  width: 60px;
+  height: 60px;
+  border-width: 5px;
+}
+
+.spinner-primary .spinner-circle {
+  border-top-color: #667eea;
+  border-right-color: #667eea;
+}
+
+.spinner-white .spinner-circle {
+  border-top-color: white;
+  border-right-color: white;
+}
+
+.spinner-success .spinner-circle {
+  border-top-color: #48bb78;
+  border-right-color: #48bb78;
+}
+
+.spinner-danger .spinner-circle {
+  border-top-color: #f56565;
+  border-right-color: #f56565;
+}
+
+.button-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.button-spinner-circle {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+  border-radius: 50%;
+  animation: spinner-rotate 0.6s linear infinite;
+}
+
+@keyframes spinner-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loading Container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 16px;
+}
+
+.loading-text {
+  color: #718096;
+  font-size: 14px;
+  font-weight: 500;
+}
